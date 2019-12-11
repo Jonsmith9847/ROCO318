@@ -9,17 +9,18 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Prior to installation the following software components are required:
-
-```
-Operating System: Ubuntu 16.04 LTS
-ROS Version: ROS Kinetic Kame
-```
+ - Operating System: **[Ubuntu 16.04 LTS](http://releases.ubuntu.com/16.04/)**
+ - ROS Version: **[ROS Kinetic Kame](http://wiki.ros.org/kinetic)**
+ 
 The following hardware components are also required:
+ - Camera: **[Logitech C920 Web Camera](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920)**
+ -  Motors: **[Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) (x2)**
+ -  3D Printed Parts:
+	 - Base Part:
+	 - Tilt Bracket:
+	 - Camera Mount:
 
-```
-Camera: [Logitech C920 Web Camera](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920)
-ROS Version: [ROS Kinetic Kame](http://wiki.ros.org/kinetic)
-```
+
 
 ### Installing
 
@@ -79,7 +80,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jonathan Smith** - *Entire Project* - [Jonsmith9847](https://github.com/Jonsmith9847)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -92,3 +93,29 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
+
+## Notes:
+
+1. roscore
+2. cd catkin_ws/src
+3. ls -ltrh /dev/video*
+
+
+Source the environment: 
+ `source /opt/ros/kinetic/setup.bash`
+
+Setup the work space folders:
+```
+mkdir -p ~/catkin_ws/src`
+cd ~/catkin_ws/
+catkin_make
+```
+Source the bash file:
+``source devel/setup.bash``
+
+Clone usb_cam package: (into src)
+``git clone https://github.com/ros-drivers/usb_cam.git``
+
+Edit launch file to use correct camera (``ls -ltrh /dev/video*``)
+
+``rsolaunch usb_cam usb_cam-test.launch``
