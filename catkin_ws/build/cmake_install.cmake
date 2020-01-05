@@ -126,6 +126,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jon/ROCO318/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/jon/ROCO318/catkin_ws/build/tilt_urdf/cmake_install.cmake")
+  include("/home/jon/ROCO318/catkin_ws/build/motor_publisher/cmake_install.cmake")
+  include("/home/jon/ROCO318/catkin_ws/build/joint_state_publisher/joint_state_publisher/cmake_install.cmake")
+  include("/home/jon/ROCO318/catkin_ws/build/motor_controller/cmake_install.cmake")
   include("/home/jon/ROCO318/catkin_ws/build/usb_cam/cmake_install.cmake")
 
 endif()

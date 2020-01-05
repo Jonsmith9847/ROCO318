@@ -1,2 +1,2 @@
-usb_cam
+joint_state_publisher/joint_state_publisher:motor_controller:motor_publisher:tilt_urdf:usb_cam
 -DCATKIN_DEVEL_PREFIX=/home/jon/ROCO318/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jon/ROCO318/catkin_ws/install -G Unix Makefiles

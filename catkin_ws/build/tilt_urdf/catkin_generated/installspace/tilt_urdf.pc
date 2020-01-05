@@ -1,0 +1,8 @@
+prefix=/home/jon/ROCO318/catkin_ws/install
+
+Name: tilt_urdf
+Description: Description of tilt_urdf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jon/ROCO318/catkin_ws/install/lib 
+Requires: 
