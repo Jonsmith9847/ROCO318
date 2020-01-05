@@ -14,13 +14,13 @@ Prior to installation the following software components are required:
  
 The following hardware components are also required:
  - Camera: **[Logitech C920 Web Camera](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920)**
- -  Motors: **[Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) (x2)**
+ - Motors: **[Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) (x2)**
+ - Dynamixel Controller: **[USB2Dynamixel Adapter](https://www.trossenrobotics.com/robotis-bioloid-usb2dynamixel.aspx)** 
+ - Dynamixel 3 Pin Cables: **[Dynamixel Cable](https://www.trossenrobotics.com/p/200mm-3-pin-dynamixel-compatible-cables-10-pack) (x3)**
  -  3D Printed Parts:
 	 - Base Part: **[STL Model](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Base.stl)**
 	 - Tilt Bracket: **[STL Model](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Joint.stl)**
 	 - Camera Mount: **[STL Model](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/CamMount.stl)**
-
-
 
 ### Installing
 
