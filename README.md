@@ -16,9 +16,9 @@ The following hardware components are also required:
  - Camera: **[Logitech C920 Web Camera](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920)**
  -  Motors: **[Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) (x2)**
  -  3D Printed Parts:
-	 - Base Part:
-	 - Tilt Bracket:
-	 - Camera Mount:
+	 - Base Part: [STL Model](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Base.stl)
+	 - Tilt Bracket: [STL Model](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Joint.stl)
+	 - Camera Mount: [STL Model](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/CamMount.stl)
 
 
 
