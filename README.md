@@ -52,24 +52,37 @@ The following hardware components are also required:
 
   <img src="https://github.com/Jonsmith9847/ROCO318/blob/master/images/step8.jpg?raw=true" width="300" height="300">
 
-### Installing
+## Installing the project
 
-A step by step series of examples that tell you how to get the system running.
+### Clone the files
 
-Say what the step will be
+ 1. Download the repository:
+```git clone https://github.com/Jonsmith9847/ROCO318.git```
+2. Navigate to the workspace:
+```cd catkin_ws/```
+3. Source the bash file:
+```source devel/setup.bash```
+4. Build the project:
+```catkin_make```
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+### Webcam Installation
+ 1. Start ROS in a new terminal:
+```roscore```
+2. Identify the webcam you want to use:
+```ls /dev/video*```
+3. Edit /catkin_ws/src/usb_cam/launch/usb_cam-test.launch if necessary to select the correct camera.
+	i.e. edit video device "/dev/video1" to "/dev/video0"
+4. Navigate to the src folder:
+```cd catkin_ws/src```
+5. Launch the usb cam node:
+```roslaunch usb_cam/launch/usb_cam-test.launch```
+6. Start RVIZ in a new terminal:
+```rviz```
+7. In RVIZ add a new Image view. 
+Add > Image > Ok
+![RVIZcam1.png](https://github.com/Jonsmith9847/ROCO318/blob/master/images/RVIZcam1.png?raw=true)
+9. Set Image Topic to /usb_cam/image_raw
+![RVIZcam2.png](https://github.com/Jonsmith9847/ROCO318/blob/master/images/RVIZcam2.png?raw=true)
 ## Running the tests
 
 Explain how to run the automated tests for this system
@@ -94,12 +107,17 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
+## CAD Models
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+The CAD Model for the project was produced using [Fusion360](https://www.autodesk.co.uk/products/fusion-360/overview#banner]). The final design includes the following models:
+**Dynamixel AX-12 [https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx]**
+**Logitech C920 Webcam [[https://grabcad.com/library/logitech-hd-pro-webcam-c920-1](https://grabcad.com/library/logitech-hd-pro-webcam-c920-1)]**
 
+
+<img src="https://github.com/Jonsmith9847/ROCO318/blob/master/Renders/Front.jpg?raw=true" width="300" height="300"><img src="https://github.com/Jonsmith9847/ROCO318/blob/master/Renders/Side.jpg?raw=true" width="300" height="300"><img src="https://github.com/Jonsmith9847/ROCO318/blob/master/Renders/IsometricFront.jpg?raw=true" width="300" height="300"><img src="https://github.com/Jonsmith9847/ROCO318/blob/master/Renders/IsometricRear.jpg?raw=true" width="300" height="300"><img src="https://github.com/Jonsmith9847/ROCO318/blob/master/Renders/Top.jpg?raw=true" width="300" height="300"><img src="https://github.com/Jonsmith9847/ROCO318/blob/master/Renders/Bottom.jpg?raw=true" width="300" height="300">
+
+STL Files and Fusion 360 files can be found in the following location:
+[https://github.com/Jonsmith9847/ROCO318/tree/master/CAD%20Files](https://github.com/Jonsmith9847/ROCO318/tree/master/CAD%20Files)
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
@@ -128,7 +146,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 1. roscore
 2. cd catkin_ws/src
-3. ls -ltrh /dev/video*
+3. ls /dev/video*
 
 
 Source the environment: 
