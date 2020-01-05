@@ -143,27 +143,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * etc
 
 ## Notes:
-
-1. roscore
-2. cd catkin_ws/src
-3. ls /dev/video*
-
-
-Source the environment: 
- `source /opt/ros/kinetic/setup.bash`
-
-Setup the work space folders:
-```
-mkdir -p ~/catkin_ws/src`
-cd ~/catkin_ws/
-catkin_make
-```
-Source the bash file:
-``source devel/setup.bash``
-
-Clone usb_cam package: (into src)
-``git clone https://github.com/ros-drivers/usb_cam.git``
-
-Edit launch file to use correct camera (``ls -ltrh /dev/video*``)
-
-``rsolaunch usb_cam usb_cam-test.launch``
