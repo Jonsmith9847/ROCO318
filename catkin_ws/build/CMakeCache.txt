@@ -301,6 +301,12 @@ dynamixel_controllers_DIR:PATH=/opt/ros/kinetic/share/dynamixel_controllers/cmak
 //The directory containing a CMake configuration file for dynamixel_driver.
 dynamixel_driver_DIR:PATH=/opt/ros/kinetic/share/dynamixel_driver/cmake
 
+//Value Computed by CMake
+dynamixel_motors_BINARY_DIR:STATIC=/home/jon/ROCO318/catkin_ws/build/dynamixel_motors
+
+//Value Computed by CMake
+dynamixel_motors_SOURCE_DIR:STATIC=/home/jon/ROCO318/catkin_ws/src/dynamixel_motors
+
 //The directory containing a CMake configuration file for dynamixel_msgs.
 dynamixel_msgs_DIR:PATH=/opt/ros/kinetic/share/dynamixel_msgs/cmake
 
@@ -560,7 +566,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
