@@ -24,14 +24,19 @@ The following hardware components are also required:
 
 ### Construction
 
- 1.  Using screws, mount a [Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) motor into the [Base Part](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Base.stl).
- 2. Using screws, connect the [Tilt Bracket](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Joint.stl) to the top of the Base Motor.
- 3. Using screws, connect the final [Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) to the [Tilt Bracket](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Joint.stl). Ensure that the non-driven side of the motor is free to rotate.
- 4. Screw the [Camera Mount](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/CamMount.stl) to the top of the Tilt Motor.
- 5. Feed a [Dynamixel Cable](https://www.trossenrobotics.com/p/200mm-3-pin-dynamixel-compatible-cables-10-pack) through the cable managment hole in the base and connect the two motors together.
- 6. Add an additional [Dynamixel Cable](https://www.trossenrobotics.com/p/200mm-3-pin-dynamixel-compatible-cables-10-pack) to the base motor and secure with a single zip tie.
- 7. Slot the [Logitech C920 Web Camera](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) into the bracket and use double sided tape to secure if required.
- 8. Connect the remaining electronics as show, ensuring that the [USB2Dynamixel Adapter](https://www.trossenrobotics.com/robotis-bioloid-usb2dynamixel.aspx) switch is set to TTL mode.
+ 1.  Using screws, mount a [Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) motor into the [Base Part](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Base.stl). ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step1a.jpg?raw=true =300x300)    ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step1b.jpg?raw=true =300x300)
+
+ 2. Using screws, connect the [Tilt Bracket](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Joint.stl) to the top of the Base Motor. ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step2a.jpg?raw=true =300x300) ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step2b.jpg?raw=true =300x300)
+ 3. Using screws, connect the final [Dynamixel AX-12](https://www.trossenrobotics.com/dynamixel-ax-12-robot-actuator.aspx) to the [Tilt Bracket](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/Joint.stl). Ensure that the non-driven side of the motor is free to rotate.    
+   ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step3a.jpg?raw=true =300x300)   ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step3b.jpg?raw=true =300x300)
+ 4. Screw the [Camera Mount](https://github.com/Jonsmith9847/ROCO318/blob/master/CAD%20Files/CamMount.stl) to the top of the Tilt Motor. 
+ ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step4.jpg?raw=true =300x300)
+ 6. Feed a [Dynamixel Cable](https://www.trossenrobotics.com/p/200mm-3-pin-dynamixel-compatible-cables-10-pack) through the cable managment hole in the base and connect the two motors together.
+ 7. Add an additional [Dynamixel Cable](https://www.trossenrobotics.com/p/200mm-3-pin-dynamixel-compatible-cables-10-pack) to the base motor and secure with a single zip tie.
+ 8. Slot the [Logitech C920 Web Camera](https://www.logitech.com/en-gb/product/hd-pro-webcam-c920) into the bracket and use double sided tape to secure if required.
+ ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step7.jpg?raw=true =300x300)
+ 9. Connect the remaining electronics as show, ensuring that the [USB2Dynamixel Adapter](https://www.trossenrobotics.com/robotis-bioloid-usb2dynamixel.aspx) switch is set to TTL mode.
+ ![Mounting the Base Motor](https://github.com/Jonsmith9847/ROCO318/blob/master/images/step8.jpg?raw=true =300x300)
 
 ### Installing
 
