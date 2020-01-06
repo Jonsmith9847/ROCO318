@@ -102,11 +102,6 @@ Moving the tilt motor:
 ```rostopic pub -1 /tilt_controller/command std_msgs/Float64 -- 2.61```
 (Min: 1.0 - Mid: 2.6 - Max: 4.2)
 
-## Running the tests
-
-Demo Video:
-
-
 ## CAD Models
 
 The CAD Model for the project was produced using [Fusion360](https://www.autodesk.co.uk/products/fusion-360/overview#banner]). The final design includes the following models:
@@ -118,6 +113,14 @@ The CAD Model for the project was produced using [Fusion360](https://www.autodes
 
 STL Files and Fusion 360 files can be found in the following location:
 [https://github.com/Jonsmith9847/ROCO318/tree/master/CAD%20Files](https://github.com/Jonsmith9847/ROCO318/tree/master/CAD%20Files)
+
+## DEMO VIDEO
+
+Demo Video: **[YOUTUBE](https://www.youtube.com/embed/bqHWkLoYdAc)**
+
+This demo video shows both the motors and webcam operating.
+The pan and tilt motors are controlled using commands from ROS. 
+The webcam feed is shown live in RVIZ.
 
 ## Authors
 
