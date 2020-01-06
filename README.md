@@ -83,29 +83,29 @@ Add > Image > Ok
 ![RVIZcam1.png](https://github.com/Jonsmith9847/ROCO318/blob/master/images/RVIZcam1.png?raw=true)
 9. Set Image Topic to /usb_cam/image_raw
 ![RVIZcam2.png](https://github.com/Jonsmith9847/ROCO318/blob/master/images/RVIZcam2.png?raw=true)
+
+### Motor controller Installation
+ 1. Start ROS in a new terminal if not already started:
+```roscore```
+2. Navigate to the src folder:
+```cd catkin_ws/src/```
+3. Launch the controller manager:
+```roslaunch dynamixel_motors/src/controller_manager.launch```
+4. Launch the joint controllers:
+```roslaunch dynamixel_motors/src/joint_controller.launch```
+
+Moving the pan motor:
+```rostopic pub -1 /pan_controller/command std_msgs/Float64 -- 2.61```
+(Min: 0 - Mid: 2.6 - Max: 5.2)
+
+Moving the tilt motor:
+```rostopic pub -1 /tilt_controller/command std_msgs/Float64 -- 2.61```
+(Min: 1.0 - Mid: 2.6 - Max: 4.2)
+
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Demo Video:
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## CAD Models
 
@@ -118,28 +118,16 @@ The CAD Model for the project was produced using [Fusion360](https://www.autodes
 
 STL Files and Fusion 360 files can be found in the following location:
 [https://github.com/Jonsmith9847/ROCO318/tree/master/CAD%20Files](https://github.com/Jonsmith9847/ROCO318/tree/master/CAD%20Files)
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Jonathan Smith** - *Entire Project* - [Jonsmith9847](https://github.com/Jonsmith9847)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Jonathan Smith** - *Project* - [Jonsmith9847](https://github.com/Jonsmith9847)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-## Notes:
+This project contains the following packages:
+* **[dynamixel_controllers](http://wiki.ros.org/dynamixel_controllers)**
+	Authors: Antons Rebguns, Cody Jorgensen, Cara Slutter
+	
+* **[usb_cam](http://wiki.ros.org/usb_cam)** 
+	* Author: Benjamin Pitzer 
